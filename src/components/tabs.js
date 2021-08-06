@@ -34,9 +34,9 @@ const Tabs = (topics) => {
   tab3.classList.add('tab')
 
   //Text
-  tab1.textContent = topics[0]
-  tab2.textContent = topics[1]
-  tab3.textContent = topics[2]
+  tab1.textContent = topics
+  tab2.textContent = topics
+  tab3.textContent = topics
 
   return top
 }
@@ -54,7 +54,7 @@ const tabsAppender = (selector) => {
   .then(res => {
     console.log(res)
     
-    document.querySelector(selector).appendChild(Tabs(res))
+    document.querySelector(selector).appendChild(Tabs(res.data))
   })
   .catch(err => {
    console.log(err)
@@ -62,3 +62,4 @@ const tabsAppender = (selector) => {
 }
 
 export { Tabs, tabsAppender }
+//press f to pay respects...

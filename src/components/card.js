@@ -45,7 +45,7 @@ const Card = (article) => {
 
   //event
   document.addEventListener('click', event => {
-    console.log(headline)
+    console.log(headLine.textContent)
   })
 
 
