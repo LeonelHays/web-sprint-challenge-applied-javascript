@@ -41,8 +41,10 @@ const Card = (article) => {
 
   //image
   //y tho
-  img.src = article.authorPhoto
-
+  img.src = article['authorPhoto']
+  //I tried dot notation, bracets and setAtribute still undefined
+  //It have somethng more to do with the axios and api
+  
   //event
   document.addEventListener('click', event => {
     console.log(headLine.textContent)
