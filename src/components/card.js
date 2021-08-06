@@ -40,6 +40,7 @@ const Card = (article) => {
   authorName.textContent = article.authorName
 
   //image
+  //y tho
   img.src = article.authorPhoto
 
   //event
@@ -61,6 +62,7 @@ const Card = (article) => {
   // Create a card from each and every article object in the response, using the Card component.
   // Append each card to the element in the DOM that matches the selector passed to the function.
   //
+  //axios ain't working aswell... can't even load a single one
   axios.get('http://localhost:5000/api/articles')
    .then(res => {
     console.log(res)
